@@ -13,5 +13,5 @@ The next steps will be the following (some of them may be realised before New Ye
 - To create the database, containing only **the names of artists**
 - To "teach" the server to **find** events on the VK
 - To make this search query to match **the pattern**
-- To get the **list of requered events**
+- To get the **list of required events**
 - Create some **GUI**
