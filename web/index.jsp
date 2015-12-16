@@ -4,6 +4,7 @@
   Date: 05.12.2015
   Time: 13:35
   To change this template use File | Settings | File Templates.
+  TODO: delete this file
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
