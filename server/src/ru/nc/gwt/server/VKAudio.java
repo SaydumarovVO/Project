@@ -37,10 +37,10 @@ public class VKAudio {
             try{
                 JSONObject jsonResp = (JSONObject) parser.parse(content.toString());
                 JSONArray  audioList = (JSONArray) jsonResp.get("response");
-                JSONObject unicAudio;
+                JSONObject uniqAudio;
                 for (int i = 1; i < audioList.size(); i++){
-                    unicAudio = (JSONObject) audioList.get(i);
-                    System.out.println(unicAudio.get("text"));
+                    uniqAudio = (JSONObject) audioList.get(i);
+                    System.out.println(uniqAudio.get("text"));
                 }
             } catch (ParseException e) {
                 e.printStackTrace();

@@ -10,6 +10,7 @@ import com.google.gwt.http.client.Response;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.*;
+import org.json.simple.JSONObject;
 import ru.nc.gwt.server.VKMusicServer;
 
 /**
@@ -19,6 +20,16 @@ public class Project implements EntryPoint {
 
     public void onModuleLoad() {
         RequestBuilder builder = new RequestBuilder(RequestBuilder.GET, "/server-1.0-SNAPSHOT/rest/music/listofaudio?action=makelist");
+        final Label label = new Label();
 
+        builder.setCallback(new RequestCallback() {
+            public void onResponseReceived(Request request, Response response) {
+                label.setText(response.getText());
+            }
+
+            public void onError(Request request, Throwable exception) {Window.alert("error");}
+        });
+
+        RootPanel.get("slot").add(label);
     }
 }

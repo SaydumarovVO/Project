@@ -19,6 +19,7 @@
     <modules>
         <module>client</module>
         <module>server</module>
+        <module>earr</module>
     </modules>
 
     <build>
@@ -29,7 +30,7 @@
                 <version>1.1.0.Alpha4</version>
                 <configuration>
                     <skip>true</skip>
-                    <filename>yourPurchases-1.0-SNAPSHOT.ear</filename>
+                    <filename>Project-1.0-SNAPSHOT.ear</filename>
                     <jboss-home>C:\Instalations\wildfly-9.0.2.Final</jboss-home>
                 </configuration>
             </plugin>
