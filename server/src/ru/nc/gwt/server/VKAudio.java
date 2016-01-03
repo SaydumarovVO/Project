@@ -11,16 +11,13 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import java.io.StringWriter;
 
-/**
- * Created by Валера on 13.12.2015.
- */
 public class VKAudio {
 
     public VKAudio() {
         URIBuilder uriBuilder = new URIBuilder();
         uriBuilder.setScheme("https").setHost("api.vk.com").setPath("/method/audio.get")
                 .setParameter("owner_id", "10245516")
-                .setParameter("access_token", "7759b536c7107be30eab3b061192be23aa2f127bd78d289be3c74cfab4ade92a6baa9fa973e7c8d80818c");
+                .setParameter("access_token", "4ed84896f60986f90aad68de50182e662fedecfaa68bbe3d3be916364549d714d5e1be216c1c49c6b7e42");
         HttpResponse response = HTTPConnector.connectResponse(uriBuilder);
         Integer status = response.getStatusLine().getStatusCode();
 

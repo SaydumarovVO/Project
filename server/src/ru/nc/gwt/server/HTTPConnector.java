@@ -11,9 +11,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-/**
- * Created by Валера on 05.12.2015.
- */
 public class HTTPConnector{
 
     public static HttpResponse connectResponse(URIBuilder uriBuilder){
